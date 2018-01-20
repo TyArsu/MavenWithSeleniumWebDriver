@@ -15,6 +15,7 @@ public class TestWithMaven1 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.com/");
 		driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")).sendKeys("fidget"+Keys.ENTER);
+		driver.quit();
 	}
 
 }
